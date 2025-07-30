@@ -21,8 +21,8 @@ class Config:
     LADESK_ONPREMISE_USER_IDENTIFIER = os.getenv('LADESK_ONPREMISE_USER_IDENTIFIER', 'k6citev3')
     FACEBOOK_DEPARTMENT_ONPREMISE = os.getenv('FACEBOOK_DEPARTMENT_ONPREMISE', 'on1zin8g')
 
-    # Application Configuration1pkaew79
-    DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
+    # Application Configuration
+    DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
     DB_PATH = os.getenv('DB_PATH', 'ladesk_integration.db')
     SECRET_KEY = os.getenv('SECRET_KEY', 'your-secret-key-here')
     HOST = os.getenv('HOST', '0.0.0.0')
@@ -31,5 +31,11 @@ class Config:
     LOG_FILE = os.getenv('LOG_FILE', 'logs/app.log')
     WEBHOOK_SECRET = os.getenv('WEBHOOK_SECRET', 'your-webhook-secret')
 
-# On-Premise Integration
-ONPREMISE_WEBHOOK_URL = os.getenv('ONPREMISE_WEBHOOK_URL', None) 
+    # Webhook URL Configuration
+    WEBHOOK_BASE_URL = os.getenv('WEBHOOK_BASE_URL', 'https://24757b351722.ngrok-free.app').strip()
+    WEBHOOK_CLOUD_ENDPOINT = f"{WEBHOOK_BASE_URL}/webhook/ladesk-cloud"
+    WEBHOOK_ONPREMISE_ENDPOINT = f"{WEBHOOK_BASE_URL}/webhook/ladesk-onpremise"
+
+    # On-Premise Integration Configuration
+    LADESK_ONPREMISE_DEPARTMENT_ID = os.getenv('LADESK_ONPREMISE_DEPARTMENT_ID', 'on1zin8g')
+    LADESK_ONPREMISE_RECIPIENT_EMAIL = os.getenv('LADESK_ONPREMISE_RECIPIENT_EMAIL', 'support@mail.social-on-premise.ladesk.com')
