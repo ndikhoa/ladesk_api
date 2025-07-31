@@ -32,7 +32,7 @@ class Config:
     WEBHOOK_SECRET = os.getenv('WEBHOOK_SECRET', 'your-webhook-secret')
 
     # Webhook URL Configuration
-    WEBHOOK_BASE_URL = os.getenv('WEBHOOK_BASE_URL', 'https://24757b351722.ngrok-free.app').strip()
+    WEBHOOK_BASE_URL = os.getenv('WEBHOOK_BASE_URL', 'https://45dc157d7046.ngrok-free.app').strip()
     WEBHOOK_CLOUD_ENDPOINT = f"{WEBHOOK_BASE_URL}/webhook/ladesk-cloud"
     WEBHOOK_ONPREMISE_ENDPOINT = f"{WEBHOOK_BASE_URL}/webhook/ladesk-onpremise"
 
