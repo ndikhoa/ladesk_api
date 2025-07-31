@@ -6,16 +6,16 @@ load_dotenv()
 
 class Config:
     # Ladesk Cloud Configuration
-    LADESK_CLOUD_API_KEY_V1 = os.getenv('LADESK_CLOUD_API_KEY_V1', 'wm6if4kwlipheqh2x4ztxc6pr73mqc66gz5pd2e0h1')
-    LADESK_CLOUD_API_KEY_V3 = os.getenv('LADESK_CLOUD_API_KEY_V3', '94jxficvclwl444533ctuidl9y7bm41fsxh5m5ujl4')
+    LADESK_CLOUD_API_KEY_V1 = os.getenv('LADESK_CLOUD_API_KEY_V1', '')
+    LADESK_CLOUD_API_KEY_V3 = os.getenv('LADESK_CLOUD_API_KEY_V3', '')
     LADESK_CLOUD_BASE_URL_V1 = os.getenv('LADESK_CLOUD_BASE_URL_V1', 'https://social.ladesk.com/api')
     LADESK_CLOUD_BASE_URL_V3 = os.getenv('LADESK_CLOUD_BASE_URL_V3', 'https://social.ladesk.com/api/v3')
     LADESK_CLOUD_USER_IDENTIFIER = os.getenv('LADESK_CLOUD_USER_IDENTIFIER', '1pkaew79')
     FACEBOOK_DEPARTMENT_CLOUD = os.getenv('FACEBOOK_DEPARTMENT_CLOUD', 'dw51dt2g')
 
     # Ladesk On-Premise Configuration
-    LADESK_ONPREMISE_API_KEY_V1 = os.getenv('LADESK_ONPREMISE_API_KEY_V1', 'mhbH7aBvKBAP1R0H94zyOxEYECgE8lUv')
-    LADESK_ONPREMISE_API_KEY_V3 = os.getenv('LADESK_ONPREMISE_API_KEY_V3', '9x05ce07vfnk83bkhjddeafp7gl3h1jrktgcp4wmbi')
+    LADESK_ONPREMISE_API_KEY_V1 = os.getenv('LADESK_ONPREMISE_API_KEY_V1', '')
+    LADESK_ONPREMISE_API_KEY_V3 = os.getenv('LADESK_ONPREMISE_API_KEY_V3', '')
     LADESK_ONPREMISE_BASE_URL_V1 = os.getenv('LADESK_ONPREMISE_BASE_URL_V1', 'https://social-on-premise.ladesk.com/api')
     LADESK_ONPREMISE_BASE_URL_V3 = os.getenv('LADESK_ONPREMISE_BASE_URL_V3', 'https://social-on-premise.ladesk.com/api/v3')
     LADESK_ONPREMISE_USER_IDENTIFIER = os.getenv('LADESK_ONPREMISE_USER_IDENTIFIER', 'k6citev3')
